@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(241, 236, 154);
+
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    color: blue;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+p{
+    color:rgb(0, 161, 182)
+}
+
+.sim{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 25px;
+    
+    width: 150px;
+    height: 40px;
+    
+    align-content: center;
+    text-align: center;
+}
+
+.sim:hover{
+    background-color: rgb(17, 226, 226);
+    color: black;
+    transform: scale(1.05);
+    transition-duration: 700ms;
+}
+
+
+#nao{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8PX;
+    
+    font-size: 25px;
+
+    width: 150px;
+    height: 40px;
+    
+    align-content: center;
+    text-align: center;
+}
+
+#nao:hover{
+    background-color: rgb(255, 251, 0);
+    color: black;
+    transition-duration: 700ms;
+    transform: scale(1.05);
+}
