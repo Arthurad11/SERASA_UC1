@@ -1,0 +1,70 @@
+body{
+    font-family: arial;
+    color: rgb(50, 50, 50);
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    padding: 2px;
+    
+    text-align: center;
+    
+
+    font-size: x-large;
+
+    background-color: black;
+    color: white;
+}
+
+.menu h1{
+    margin: 0;
+}
+
+.menu p{
+    margin: 0;
+    padding-top: 0;
+
+    position: relative;
+    bottom: 25px;
+}
+
+
+.artigo{
+    background-color: white;
+    
+    margin: 5px;
+    margin-bottom: 40px;
+    margin-left: 15dvh;
+    margin-right: 15dvh;
+    
+    padding: 20px;
+    padding-left: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 1px 2px 3px #ccc;
+}
+
+.botaoLerMais{
+    background-color: rgb(0, 17, 255);
+    color: rgb(255, 252, 252);
+    border: none;
+    border-radius: 7px;
+    
+    padding: 12px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    position: relative;
+    align-content: right;
+
+    cursor: pointer;
+}
+
+.botaoLerMais:hover{
+    background-color: rgb(0, 15, 219);
+    
+    
+}

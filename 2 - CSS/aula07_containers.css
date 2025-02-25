@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    margin-top: 0;
+}
+
+div{
+    
+}
+
+.fundoAzul{
+    background-color: blue;
+
+}
+
+.textoVerde{
+    color: green;
+}
+
+.textoVermelho{
+    color: red;
+}
