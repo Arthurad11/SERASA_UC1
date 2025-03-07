@@ -7,15 +7,29 @@ export default function Home() {
   
   let [ carrinho, setCarrinho  ]  = useState(0)
   
+  function removeCarrinho(){
+    if(carrinho > 0){
+      setCarrinho(carrinho - 1)
+    }
+  }
   
   return (
     <div>
       <h1>Conradito Market</h1>
       <p>O melhor supermercado do bairro!</p>
       
+      <br/>
+
       <hr/>
+
+      <br/>
       
       <p className="carrinho"> Itens no Carrinho: {carrinho} </p>
+      <button onClick={ () => removeCarrinho() }>Remover Item</button>
+      <button onClick={ ()=> setCarrinho(carrinho = 0) }>Limpar carrinho</button>
+
+      <br/>
+      <br/>
 
       <hr/>
 
@@ -31,3 +45,4 @@ export default function Home() {
     </div>
   );
 }
+
