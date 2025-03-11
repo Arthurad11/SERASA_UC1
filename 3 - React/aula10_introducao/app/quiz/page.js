@@ -53,20 +53,17 @@ function Quiz() {
                     <hr/>
 
                     <h2>Quanto é 2+2?</h2>
-                    <ul>
-                         <label>
-                              <li className={selected[0]} onClick={ ()=> { setP3(0); setSelected("selecionado","","","") } }>2</li>
-                         </label>
-                         <label>
-                              <li className={selected[1]} onClick={ ()=> { setP3(0); setSelected("","selecionado","","") } }>3</li>
-                         </label>
-                         <label>
-                              <li className={selected[2]} onClick={ ()=> { setP3(0); setSelected("","","selecionado","") } }>8</li>
-                         </label>
-                         <label>
-                              <li className={selected[3]} onClick={ ()=> { setP3(1); setSelected("","","","selecionado") } }>4</li>
-                         </label>
-                    </ul>
+                    
+                    
+                              <p className={selected[0]} onClick={ ()=> { setP3(0); setSelected(["selected","","",""]) } }>2</p>
+                    
+                              <p className={selected[1]} onClick={ ()=> { setP3(0); setSelected(["","selected","",""]) } }>3</p>
+                         
+                              <p className={selected[2]} onClick={ ()=> { setP3(0); setSelected(["","","selected",""]) } }>8</p>
+                         
+                              <p className={selected[3]} onClick={ ()=> { setP3(1); setSelected(["","","","selected"]) } }>4</p>
+                         
+                    
                     
                     <hr/>
                     
