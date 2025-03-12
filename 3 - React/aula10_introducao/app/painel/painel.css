@@ -1,0 +1,11 @@
+.error{
+    color: lightpink;
+    background-color: darkred;
+    padding: 10px;
+}
+
+.sucess{
+    color: lightgreen;
+    background-color: darkgreen;
+    padding: 10px;
+}
