@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 import "./painel.css"
+import Produtos from "../produtos/page";
 
 function Painel() {
 
