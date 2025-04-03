@@ -27,7 +27,7 @@ function Produtos() {
             <hr/>
 
             {produtos.map(i => 
-            <div  className="border ">
+            <div  className="border p-3">
                 <h3 className="text-md"><span className="font-bold">{i.nome}</span> - R$ {i.preco.toFixed(2)}</h3>
                 <h6 className="text-sm text-blue-900 ">Quantidade em estoque: <span className="font-bold">{i.quantidade}</span></h6>
 
