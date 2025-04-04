@@ -8,6 +8,10 @@ import { useEffect, useState } from "react";
 export default function Home() {
 	const [produtos, alteraProdutos] = useState([]);
 
+    const [nome, alteraNome] = useState([]);
+    const [preco, alteraPreco] = useState([]);
+    const [quantidade, alteraQuantidade] = useState([]);
+
 	async function buscaTodos() {
 		const response = await axios.get("http://localhost:3000/api/produtos");
 		alteraProdutos(response.data);
@@ -15,8 +19,25 @@ export default function Home() {
 
 	async function buscaPorId() {}
 	function buscaPorNome() {}
-	function InsereProduto() {}
-	function atualizaProdutos() {}
+
+	async function insereProduto(e) {
+        
+        e.preventDefault()
+        
+        const obj = {
+            nome: nome,
+            preco: preco,
+            quantidade: quantidade
+        }
+
+        const response = await axios.post("http://localhost:3000/api/produtos", obj)
+        console.log(response.data)
+
+        buscaTodos()
+    }
+	
+    
+    function atualizaProdutos() {}
 	function removeProdutos() {}
 
     function formataData( valor ){
@@ -35,7 +56,7 @@ export default function Home() {
     }
 
 	useEffect(() => {
-		buscaTodos();
+		buscaTodos()
 	}, []);
 
 	return (
@@ -108,20 +129,20 @@ export default function Home() {
 
 			<hr />
 
-			<form>
+			<form onSubmit={ (e)=> insereProduto(e)}>
 				<label>
 					Digite o nome do produto: <br />
-					<input />
+					<input onChange={ (e) => alteraNome(e.target.value)}/>
 				</label>
 				<br />
 				<label>
 					Digite o preço do produto: <br />
-					<input />
+					<input onChange={ (e) => alteraPreco(e.target.value)}/>
 				</label>
 				<br />
 				<label>
 					Digite a quantidade do produto: <br />
-					<input />
+					<input onChange={ (e) => alteraQuantidade(e.target.value)}/>
 				</label>
 				<br />
 				<button>Salvar</button>
